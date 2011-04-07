@@ -36,6 +36,7 @@
             meshes, volumes, timeseries, ....
     
     /topology
+        e.g. aren't these jsut (tree) Adjacency lists
     
         /local_topology # indices to the treenodes. the indices are implicitly defined through spatial_location order
         [-1, 0, 0, 1, 1, 2, -1, 0, 1, 1, 2]
