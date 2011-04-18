@@ -4,11 +4,11 @@ Subpackages
 
 import spatiotemporalatom as sta
 
-sta.spatial
+chora.spatial
 
-sta.spatial.measurement
+chora.spatial.measurement
 
-sta.spatial.geometry.basic
+chora.spatial.geometry.basic
 
 .point
 .line
@@ -21,16 +21,16 @@ sta.spatial.geometry.basic
 
 (derive from pyeuclid)
 
-sta.spatial.geometry.advanced
+chora.spatial.geometry.advanced
 
 .tree
 .connector
 
-sta.spatial.function
+chora.spatial.function
 
-sta.spatial.query
+chora.spatial.query
 
-sta.spatial.region
+chora.spatial.region
 
 * needs a spatial reference frame (origo, coordinate axes, units)
 * can have a spatial data structure
@@ -40,6 +40,8 @@ sta.spatial.region
 Markup Language for Representing Vector Geometry Objects
 http://en.wikipedia.org/wiki/Well-known_text
 
+Concepts of space in Greek thought
+http://books.google.com/books?id=4TyvpvBLz14C
 
 http://paulbourke.net/geometry/
 http://en.wikipedia.org/wiki/Spatial_query
