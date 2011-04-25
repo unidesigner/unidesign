@@ -78,7 +78,8 @@ Test-driven cases...
 
 http://en.wikipedia.org/wiki/Tree_%28data_structure%29
 
-Possible synapse metadata information/structure: http://www.frontiersin.org/Cellular%20Neuroscience/specialtopics/building_up_the_inhibitory_syn/126
+Possible synapse metadata information/structure:
+http://www.frontiersin.org/Cellular%20Neuroscience/specialtopics/building_up_the_inhibitory_syn/126
 
 Motivation
 =======
