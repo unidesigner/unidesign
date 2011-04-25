@@ -8,3 +8,9 @@ consider the thing as a whole we must consider an aggregate of all its
 "temporal parts" or instances of existing. "
 
 Cited from http://en.wikipedia.org/wiki/Philosophy_of_space_and_time
+
+Paper
+-----
+* http://arxiv.org/abs/1103.3300
+* http://www.stat.cmu.edu/~gmg/home/index.php/publications.html
+* http://www.cscs.umich.edu/~crshalizi/weblog/
