@@ -54,7 +54,6 @@ unidesign.spatial.region
 * can have a spatial data structure
 * can contain geometry objects
 
-
 Markup Language for Representing Vector Geometry Objects
 http://en.wikipedia.org/wiki/Well-known_text
 
@@ -63,18 +62,6 @@ http://books.google.com/books?id=4TyvpvBLz14C
 
 http://paulbourke.net/geometry/
 http://en.wikipedia.org/wiki/Spatial_query
-
-Tree datastructures
-
-* with pointers
-* in an array
-http://en.wikipedia.org/wiki/Binary_heap
-
-Thin classes as easy-to-use interface to the underlying field datastructures.
-
-Test-driven cases...
-
-http://en.wikipedia.org/wiki/Tree_%28data_structure%29
 
 Possible synapse metadata information/structure:
 http://www.frontiersin.org/Cellular%20Neuroscience/specialtopics/building_up_the_inhibitory_syn/126
@@ -100,3 +87,5 @@ Design Goals
 * Design towards modular hierarchical structure, toward multi-scale. (Components are themselves complex entities with their own internal dynamics.)
 * Keep the temporal domain in mind.
 * Design toward collaborative process of exploration
+* Scalable data analysis capabilities
+* "Thin" classes to underlying data from NeuroHDF
