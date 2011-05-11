@@ -14,6 +14,7 @@ connector2 = Connector()
 
 # Differing characteristics
 # Group: grouping in a set of entities. A Group might have slots and can act as a node
+
 # Region: a region might be embedded in a well-defined spatial/temporal coordinate system
 region1 = Region() / Group()
 
