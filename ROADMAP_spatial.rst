@@ -68,6 +68,13 @@ attributes: spatial location, inslot, outslot, type
 
 .areatree
 
+Other 3D Shape
+* contour pile
+* voxel enumeration
+* triangulation of the surface
+Methods for conversion between data types
+3D BASE: A GEOMETRICAL DATA BASE SYSTEM FOR THE ANALYSIS AND VISUALISATION OF 3D-SHAPES OBTAINED
+FROM PARALLEL SERIAL SECTIONS INCLUDING THREE DIFFERENT GEOMETRICAL REPRESENTATIONS
 
 unidesign.spatial.generator
 ---------------------------
@@ -172,7 +179,10 @@ Basic Questions
 ===============
 * Storage of circuitry local (with individual self-contained elements) or global (as a big array with labels for indexing)
     * this questions are pertaining to: the data format, the data object model, the visualization object model
-
+    * if global, want to extract one arborization (e.g. make it local), and then do analysis
+* fiber bundle format: time slice at the topmost level. what is the most efficient? how far does it depend on the data and required operations?
+* many hdf5 datasets (for the objects), or one big pooled one. or maybe only later pool, when creating the Region.
+    * imagine researchers used to SWC files. they might want to access them even by name. attributes can hold further information.
 
 References
 ==========

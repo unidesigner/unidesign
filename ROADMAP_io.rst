@@ -11,6 +11,9 @@ HDF5 forum
 
 Design Goals
 ------------
+* Propose the hierarchical layout with groups and datasets,
+  only later define a set of core characteristics for
+  a valid standard
 * Specify group layout convention
 * Specify usage of attributes
 * Unicode support?
@@ -21,14 +24,6 @@ Compatability/Export
 * NeuroML: http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1000815
 * NineML: http://www.nineml.org/news/news.shtml
 * Learn from Bioinf community: http://abhishek-tiwari.com/2009/02/comparison-of-cellml-and-sbml.html
-
-Need to represent:
-1) spiking neurons
-2) synapses
-3) populations of neurons and
-4) connectivity patterns across populations of neurons.
-
-
 
 Interfacing with Simulation Environments
 ----------------------------------------
@@ -54,10 +49,9 @@ Tree
 http://en.wikipedia.org/wiki/Tree_%28data_structure%29
 http://en.wikipedia.org/wiki/Binary_heap
 
-3D Shape
-* contour pile
-* voxel enumeration
-* triangulation of the surface
-Methods for conversion between data types
-3D BASE: A GEOMETRICAL DATA BASE SYSTEM FOR THE ANALYSIS AND VISUALISATION OF 3D-SHAPES OBTAINED
-FROM PARALLEL SERIAL SECTIONS INCLUDING THREE DIFFERENT GEOMETRICAL REPRESENTATIONS
+Need to represent:
+1) spiking neurons
+2) synapses
+3) populations of neurons and
+4) connectivity patterns across populations of neurons.
+
