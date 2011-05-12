@@ -151,6 +151,7 @@ Motivation
 * Inspiration from imglib2 design
 * Python Neo: http://packages.python.org/neo/classes.html (see RecordingPoint for link to spatial)
 * Fiji/TrakEM
+* GeoSpatial community http://gispython.org/shapely/docs/1.0/manual.html#background
 
 SWC Databases
 -------------
