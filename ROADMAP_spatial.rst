@@ -36,6 +36,17 @@ unidesign.spatial.geometry
 How to accomodate different data structures?
 
 .region
+* can have a spatial data structure
+* can contain geometry objects
+
+.group
+A compound of a set of basic and advanced geometric objects
+e.g. "neuron": trees, cellbody, spines, synapses, vesicles, other
+subcellular components etc. This helps for de/selecting
+
+vs. a group of different object types (tree, slices etc.)
+vs. can group anything, give it a new group id
+storage in NeuroHDF with a list of paths?
 
 
 unidesign.spatial.geometry.basic
@@ -58,6 +69,11 @@ unidesign.spatial.geometry.advanced
 -----------------------------------
 
 .tree
+methods:
+- delete_treenode, and rejoin
+- reroot
+- add_node_with_parent
+- add_node_on_segment
 
 .spine
 
@@ -84,9 +100,17 @@ unidesign.spatial.generator
 * NETMORPH http://www.ncbi.nlm.nih.gov/pubmed/19672726 http://netmorph.org/
 * Hermann Cuntz http://transcurve.net/profiles/blogs/blueprint-for-the-brain
 
+Similar to sampler for point geometry
+
 unidesign.spatial.function
 --------------------------
 Modify existing features to create new ones, for example by providing a buffer around them, intersecting features, etc.
+They are specific to the object types
+
+.tree
+* concatenate(tree1, tree1joinnode, tree2, tree2joinnode)
+* resample(tree, method)
+* split(tree, treesplitnode)
 
 Function prototype: functionName (parameter(s)) : return type
 * Distance(geometry, geometry) : number
@@ -123,15 +147,16 @@ unidesign.spatial.converter
 
 * from directed acyclic graph to tree
 
+unidesign.spatial.sampler
+-------------------------
+Functions to sample geometry in a Region.
+e.g. sampling on a spatial grid
+
 unidesign.spatial.query / .predicates
 -----------------------
 Spatial Predicates: Allows true/false queries such as 'is there a residence located within a mile of the area we are planning to build the landfill?'
 
-unidesign.spatial.region
-------------------------
-* needs a spatial reference frame (origo, coordinate axes, units, spatial grid)
-* can have a spatial data structure
-* can contain geometry objects
+======================
 
 Markup Language for Representing Vector Geometry Objects
 http://en.wikipedia.org/wiki/Well-known_text
@@ -160,6 +185,7 @@ Motivation
 * Python Neo: http://packages.python.org/neo/classes.html (see RecordingPoint for link to spatial)
 * Fiji/TrakEM
 * GeoSpatial community http://gispython.org/shapely/docs/1.0/manual.html#background
+* http://code.google.com/p/treestoolbox/
 
 SWC Databases
 -------------

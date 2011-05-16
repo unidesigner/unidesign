@@ -1,8 +1,14 @@
-# Defining an adequate HDF5 hierarchical layout
+# Recommendation for NeuroHDF hierarchical layout
+
+# Provide a one-on-one mapping from Groups to Python classes.
+# e.g. the Group name represents an instance, and it has a attribute
+# "type"/"class" denoting the class name
 
 /root
-    /3DRegion (define namespace: neuroscience.spatial.microscale )
-    
+
+    /Group:Region (define namespace: neuroscience.spatial.microscale )
+
+
         /Dataset:Metadata
             Data: (encoded as JSON byte-string, or XML-encoded specification)
 
@@ -65,13 +71,21 @@
 
             /Dataset:Contour002
 
-        /Group:Forest
+        /Group:Forest/TreeRegion/TreeConnectorRegion
+        # Question: with a TreeRegion, is this breaking the semantics with a
+        # Region that can have trees as their parts?
 
             # Design decision: either
             # 1. one dataset containing all the trees with label array to select
             # 2. multiple dataset objects containing only one tree
             # Criteria: efficiency to load/store/access ? overhead?
 
+            /Dataset:verticesid
             /Dataset:verticeslocation
             /Dataset:globaltopology
+            /Dataset:localtopology
             /Dataset:labeling
+            /Dataset:coloring
+
+            # If we want to store Connectors, they must go into the
+            # Forest and be indexed in the globaltopology

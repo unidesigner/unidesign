@@ -4,6 +4,7 @@ from unidesign import spatial
 from unidesign.spatial.geometry import Tree, Connector
 from unidesign.spatial.container import Region, ConnectorSet
 
+forest1 = Forrest()
 
 tree1 = Tree()
 tree2 = Tree()
@@ -95,6 +96,9 @@ connector1.get_center_of_gravity() / .centroid
 
 from unidesign.semantics.entities import Neuropile, Neuron, Synapse, Tract, Cell?
 # wrapper classes to add semantically relevant attributes to geometric types
+# class inheritance? can we say validly a Neuron is a Tree? It is rather: Tree is a model of a Neuron.
+# But also other geometric "models" are possible, such as areatree, voxelsets, (labeled) contourstack etc.
+# Rather introduce a 3DGeometry or 3DGeometryRegion object ?
 neuron1 = Neuron( tree1 )
 neuron2 = Neuron( tree2 )
 neuron3 = Neuron( tree3 )
