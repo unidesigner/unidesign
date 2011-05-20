@@ -14,3 +14,10 @@ Paper
 * http://arxiv.org/abs/1103.3300
 * http://www.stat.cmu.edu/~gmg/home/index.php/publications.html
 * http://www.cscs.umich.edu/~crshalizi/weblog/
+* http://cscs.umich.edu/~crshalizi/notebooks/neural-coding.html
+
+Spike Train Metric
+------------------
+* van Rossum, M. C. W. (2001). A novel spike distance. Neural Comput. 13, 751–763
+spike distance metric to evaluate each neuron’s spike discharge pattern. The metric quantifies the distance between
+every possible pair of spike trains in the data set for each neuron.

@@ -182,8 +182,13 @@ Motivation
 * BioHDF-XML-RDF http://abhishek-tiwari.com/2009/03/biohdf-xml-rdf-triplet.html
 * http://en.wikipedia.org/wiki/DEVS
 * Inspiration from imglib2 design
+* http://geodjango.org/
+
 * Python Neo: http://packages.python.org/neo/classes.html (see RecordingPoint for link to spatial)
-* Fiji/TrakEM
+* Fiji/TrakEM https://github.com/acardona/Fiji-TrakEM2-scripts
+* NeuroTools http://neuralensemble.org/trac/NeuroTools
+* OpenElectrophy http://neuralensemble.org/trac/OpenElectrophy
+
 * GeoSpatial community http://gispython.org/shapely/docs/1.0/manual.html#background
 * http://code.google.com/p/treestoolbox/
 
