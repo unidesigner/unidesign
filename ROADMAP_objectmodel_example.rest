@@ -1,0 +1,22 @@
+---example---
+
+    /Group:Region
+
+        Attributes:
+            namespace: neuroscience.anatomy.macroscale
+            dimension:
+            resolution: (1.0, 1.0, 1.0)
+            resolution_unit: ('mm', 'mm', 'mm')
+            affine: np.eye(4)
+
+        /Group:3DVolumes
+            # a three-dimensional volumetric dataset converted from Nifti-1
+
+        /Group:3DSurfaces
+            # a three-dimensional surface dataset converted from Gifti
+
+        /Group:Tractography
+            # a three-dimensional fiber tractography dataset converted from TrackVis
+
+
+---example---

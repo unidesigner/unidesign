@@ -183,6 +183,7 @@ Motivation
 * http://en.wikipedia.org/wiki/DEVS
 * Inspiration from imglib2 design
 * http://geodjango.org/
+* http://www.gdal.org/
 
 * Python Neo: http://packages.python.org/neo/classes.html (see RecordingPoint for link to spatial)
 * Fiji/TrakEM https://github.com/acardona/Fiji-TrakEM2-scripts
