@@ -16,6 +16,11 @@ Synapse classes:
 * chemical synapse
 * neuromuscular junction
 
+Synapse attributes:
+* inhibitory
+* excitatory
+* 
+
 Components:
 * axon
 * axon collateral
@@ -68,6 +73,7 @@ Molecules:
 * acetylcholine
 * calbindin
 * calretinin
+* glycin
 * dopamine
 * glutamate
 * nNOS

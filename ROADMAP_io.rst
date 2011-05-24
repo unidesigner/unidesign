@@ -42,6 +42,7 @@ Resources
 * NeuronDB web site: http://senselab.med.yale.edu/neurondb
 * http://www.NeuroMorpho.Org
 * http://mattions.github.com/neuronvisio/index.html
+* SWC Databases http://krasnow.gmu.edu/cn3/L-Neuron/database/index.html
 
 Datastructures
 --------------
@@ -50,8 +51,7 @@ http://en.wikipedia.org/wiki/Tree_%28data_structure%29
 http://en.wikipedia.org/wiki/Binary_heap
 
 Need to represent:
-1) spiking neurons
-2) synapses
-3) populations of neurons and
-4) connectivity patterns across populations of neurons.
-
+1) spiking neurons -> NineML?
+2) synapses -> connectors
+3) populations of neurons and -> region with trees and connectors
+4) connectivity patterns across populations of neurons, or classes of neurons

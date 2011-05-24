@@ -21,3 +21,8 @@ Spike Train Metric
 * van Rossum, M. C. W. (2001). A novel spike distance. Neural Comput. 13, 751–763
 spike distance metric to evaluate each neuron’s spike discharge pattern. The metric quantifies the distance between
 every possible pair of spike trains in the data set for each neuron.
+
+* Python Neo: http://packages.python.org/neo/classes.html (see RecordingPoint for link to spatial)
+* OpenElectrophy http://neuralensemble.org/trac/OpenElectrophy/wiki
+
+* Discrete Event System Specification http://en.wikipedia.org/wiki/DEVS
