@@ -1,6 +1,6 @@
 
 class Region(object):
-    """ Base class for a spatial container
+    """ Base class for a spatial Region container
 
     A Region can contain simple and advanced geometry.
 

@@ -1,7 +1,9 @@
 """ Test unidesign.spatial module """
 
 from unidesign import spatial
+
 from unidesign.spatial.geometry import Tree, Connector
+
 from unidesign.spatial.container import Region, ConnectorSet
 
 forest1 = Forrest()

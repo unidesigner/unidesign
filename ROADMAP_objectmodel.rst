@@ -26,9 +26,10 @@
     /Group:Behavior
         # Behavioral measurements
 
-    /Group:Connectionmatrix
+    /Group:Connectionmatrix/Graph/Circuitry/ConnectivityDiagram
         # Contains (sparse) connectivity matrices
         # With row labeling
+        # also hierarchical!
 
     /Group:Region
         # defines the container region for datasets of different
