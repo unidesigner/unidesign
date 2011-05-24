@@ -11,6 +11,14 @@ Focus:
 http://paulbourke.net/geometry/
 http://en.wikipedia.org/wiki/Spatial_query
 
+Nomenclature
+============
+* tree, treeline, skeleton
+* segment, section, line
+* connector
+* treenode, vertex, node
+* positions, points, locations, vertices
+
 Motivation
 ==========
 * http://krasnow.gmu.edu/cn3/data-tools.html
@@ -42,8 +50,6 @@ Basic Questions
     * this questions are pertaining to: the data format, the data object model, the visualization object model
     * if global, want to extract one arborization (e.g. make it local), and then do analysis
 * fiber bundle format: time slice at the topmost level. what is the most efficient? how far does it depend on the data and required operations?
-* many hdf5 datasets (for the objects), or one big pooled one. or maybe only later pool, when creating the Region.
-    * imagine researchers used to SWC files. they might want to access them even by name. attributes can hold further information.
 * importance of the ability to select/deselect, group elements for easier interactivity
 * backend storage using neurohdf or ORM and database, e.g. with sqlalchemy
 

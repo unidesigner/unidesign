@@ -47,6 +47,7 @@ spatial.query.inconnections_count( region1, tree1 )
 spatial.query.connection_exists( region1, tree1, tree2 )
 
 # Extract backbone of Tree interpreted as Graph
+# might return a subgraph? or a list of treenode ids
 spatial.function.extract_backbone( tree1 )
 
 # Convert a Tree to a Graph object

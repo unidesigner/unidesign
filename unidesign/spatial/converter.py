@@ -13,4 +13,7 @@ unidesign.spatial.converter
 * from tree to graph
 
 * from directed acyclic graph to tree
+
+* from SWC to tree, loading as a classmethod or into io?
+
 """

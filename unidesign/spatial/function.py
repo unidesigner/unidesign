@@ -4,6 +4,8 @@ unidesign.spatial.function
 Modify existing features to create new ones, for example by providing a buffer around them, intersecting features, etc.
 They are specific to the object types
 
+Maybe there is some overlap with an spatial.edit subpackage
+
 .tree
 * concatenate(tree1, tree1joinnode, tree2, tree2joinnode)
 * resample(tree, method)

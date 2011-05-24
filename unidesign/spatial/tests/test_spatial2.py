@@ -45,6 +45,7 @@ class Tree(object):
     # concepts, fetched from NeuroHDF
     labels = None
     # ...
+    # dynamically add using setattr and getattr
 
     # outgoing connectors
     output = []
@@ -52,7 +53,25 @@ class Tree(object):
     # incoming connectors
     input = []
 
+    def reroot(self, new_root_id):
+        # reroot a tree
+        # take care, rerooting would might change the ids
+        # and subsequently invalidate the connectors
+        # no, it is just changing the connectivity
+        pass
+    
+    def subtree(self, subtree_root_id, copy = True):
+        # return a new tree with the given root subtree
+        pass
 
+    def attach(self, tree_instance, treenode_nodeid_to_merge_onto):
+        # attach another tree to self at the given treenode id
+        pass
+
+    def split(self, at_treenode):
+        # split Tree at treenode, returning two new trees
+        # might be better defined somewhere else
+        pass
 
 class Connector(object):
 
