@@ -26,3 +26,4 @@ every possible pair of spike trains in the data set for each neuron.
 * OpenElectrophy http://neuralensemble.org/trac/OpenElectrophy/wiki
 
 * Discrete Event System Specification http://en.wikipedia.org/wiki/DEVS
+* Hierarchical Time Series http://robjhyndman.com/papers/hierarchical/

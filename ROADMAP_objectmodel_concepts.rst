@@ -5,6 +5,11 @@ Neuron classes:
 * interneuron
 * motoneuron / motor neuron
 
+* gene expression profiles
+* electrophysiological profiles
+* morphological profiles
+-> morpho-electrophysiological types
+
 Dimension for neuron classification:
 * morphology
 * connectivity
@@ -19,7 +24,14 @@ Synapse classes:
 Synapse attributes:
 * inhibitory
 * excitatory
-* 
+* conductances
+* neurotransmitter receptors
+* ionic permeabilities
+* reversal potentials
+* probabilities of release
+* depression time constants
+* facilitation time constants
+* long-term plasticities
 
 Components:
 * axon
