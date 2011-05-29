@@ -27,6 +27,7 @@ Motivation
 * http://neura.org/NeuRA_Homepage/Start.html
 ** http://home.earthlink.net/~perlewitz/sftwr.html#morphology
 * https://github.com/tfoutz99/Neuron3D
+* Figure 4 in http://www.ini.uzh.ch/~acardona/papers/Cardona_2010_lineage_identification.pdf
 
 * Inspiration from imglib2 design
 * http://geodjango.org/
