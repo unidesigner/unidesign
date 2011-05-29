@@ -30,4 +30,8 @@ The voxel representation is most favourable representation for these types of op
 
 Numerical analysis: Depending much on the representation
 e.g. voxel-related, tree-related, slice-related or surface-related measures
+
+Comparison of morphologies, tree metrics (used in DIADEM, tree edit distance):
+http://www.springerlink.com/content/n77666586741q811/fulltext.pdf
+
 """

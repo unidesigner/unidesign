@@ -32,6 +32,7 @@ Motivation
 * http://geodjango.org/
 * http://www.gdal.org/
 * GeoSpatial community http://gispython.org/shapely/docs/1.0/manual.html#background
+* http://www.neurogeometry.net/
 
 Design Goals
 ============
