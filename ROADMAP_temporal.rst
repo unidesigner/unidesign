@@ -27,3 +27,5 @@ every possible pair of spike trains in the data set for each neuron.
 
 * Discrete Event System Specification http://en.wikipedia.org/wiki/DEVS
 * Hierarchical Time Series http://robjhyndman.com/papers/hierarchical/
+
+* DynamicRegion with t dimension. How to transform event and interval?

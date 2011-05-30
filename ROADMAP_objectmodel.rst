@@ -4,6 +4,8 @@
 # e.g. the Group name represents an instance, and it has a attribute
 # "type"/"class" denoting the class name
 
+# Level of Details in Design?
+
 /root
     Attributes:
         creator:
@@ -34,8 +36,10 @@
     /Group:Region
         # defines the container region for datasets of different
         # types in the subhierarchy, dataset can contain multiple Regions
-        
+
         Attributes:
+            id : int
+                # needs ids to be used as hash id and for RegionConnector specification
             dimension: (int,int,int)
             resolution: (float,float,float)
             resolution_unit: (str,str,str)
@@ -146,7 +150,9 @@
                 More concepts: radius, confidence, cell class, scalar / vector / tensor
 
             /Group:Connectivity
-
+                # rather store full connectivity [fromidx, toidx] rather than parent-child
+                # with -1. advantage of using unsigned int. similarly for triangles [firstidx,secidx,thirdidx]
+                
                 /Dataset:data
                     # adds the offset to the ordered trees to make indexing global into the Points
                     Attributes:
@@ -170,6 +176,18 @@
                         [0,-1]
                         [1, 0]
                         ...
+
+            /Group:Trees
+                # here you could store tree-based tags, e.g. associated with the tree id
+
+                /Group:Concept
+                    Attributes:
+                        type : aabb
+                    # store axis aligned bounding boxes for each tree
+                    /Dataset:data
+                        [id, lower, upper]
+                        [123, x0, y0, z0, x1, y1, z1]
+                        ....
 
         /Group:Connectors
             # connectors are M:N relations between treeline nodes
@@ -202,3 +220,6 @@
                 # Question: is post_conn directionality OK? alternatively
                 # have another column defining the type/directionality
                 # What do you possibly want to store?
+
+        /Group:PointCloud
+            # e.g. vertices without connectivity but radius and color attributes
