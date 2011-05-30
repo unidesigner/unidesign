@@ -28,4 +28,6 @@ Defines (morphological) measures for different geometries
 * position on the dendritic backbone
 * shape classification (thin, mushroom, stubby)
 * density and distribution on the tree
+
+See appendix of http://www.springerlink.com/content/37h5r777825292lv/fulltext.pdf
 """
