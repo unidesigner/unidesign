@@ -136,6 +136,14 @@
                         name:labels
                         description: 'Semantics of the points'
                         mapping: '{u"1": u"axon", u"2" : u"soma", u"3" : u"dendrite"}'
+                    /Dataset:data
+                        1
+                        1
+                        2
+                        3
+                        3
+                        .
+                        .
 
                 /Group:Concept
                     Attributes:
