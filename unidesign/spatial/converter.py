@@ -16,4 +16,7 @@ unidesign.spatial.converter
 
 * from SWC to tree, loading as a classmethod or into io?
 
+Morphology converter, lots of SWC for testing
+* http://neuronland.org/NLMorphologyConverter/NLMorphologyConverter.html
+
 """

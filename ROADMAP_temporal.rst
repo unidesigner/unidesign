@@ -27,3 +27,12 @@ every possible pair of spike trains in the data set for each neuron.
 
 * Discrete Event System Specification http://en.wikipedia.org/wiki/DEVS
 * Hierarchical Time Series http://robjhyndman.com/papers/hierarchical/
+
+Neural Coding / Reconstructions
+-------------------------------
+* Characterizing the fine structure of a neural sensory code through information distortion
+http://www.springerlink.com/content/at610w0480663m00/fulltext.pdf
+
+Packages
+--------
+* http://code.google.com/p/pandas/

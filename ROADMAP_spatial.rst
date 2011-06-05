@@ -11,6 +11,18 @@ Focus:
 http://paulbourke.net/geometry/
 http://en.wikipedia.org/wiki/Spatial_query
 
+For example, mapping of variables and geometry specs are things that will need to be worked out in order to do a proposed
+ML for compartmental chemistry and compartmental neuronal modeling.
+
+A common issue in multiscale models is the valuable capability of being able to switch between scales of representation.
+
+Consider the case where a channel is spread over a dendrite. We want to provide a mapping between channel conductance
+in each location , and the level of some molecule in the same location. Alternatively, we may want to deliver a stimulus
+at a specific location along the deendrite, and so need to specify which receptor instances to activate.
+
+Goal: want compartmental chemistry and compartmental neuronal modelling
+
+The future models of axonal guidance will probably be similar to existent modelf of cell chemotaxis. (standard reaction-diffusion models)
 Nomenclature
 ============
 * tree, treeline, skeleton
@@ -34,6 +46,8 @@ Motivation
 * http://www.gdal.org/
 * GeoSpatial community http://gispython.org/shapely/docs/1.0/manual.html#background
 * http://www.neurogeometry.net/
+* Numpy array tricks (e.g. amin) http://www.slideshare.net/enthought/numpy-talk-at-siam
+* http://netmorph.org/
 
 Design Goals
 ============

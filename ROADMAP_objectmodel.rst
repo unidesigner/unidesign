@@ -4,6 +4,9 @@
 # e.g. the Group name represents an instance, and it has a attribute
 # "type"/"class" denoting the class name
 
+Check if nothing is missing from what is expressible in FieldML/MeshML
+http://www.physiome.org.nz/xml_languages/fieldml/documents/meshml_fieldml.html/
+
 /root
     Attributes:
         creator:
