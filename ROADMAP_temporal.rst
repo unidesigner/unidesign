@@ -36,3 +36,7 @@ http://www.springerlink.com/content/at610w0480663m00/fulltext.pdf
 Packages
 --------
 * http://code.google.com/p/pandas/
+
+Questions
+---------
+* DynamicRegion with t dimension. How to transform event and interval?

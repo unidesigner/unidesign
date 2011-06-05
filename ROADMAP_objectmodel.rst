@@ -7,6 +7,8 @@
 Check if nothing is missing from what is expressible in FieldML/MeshML
 http://www.physiome.org.nz/xml_languages/fieldml/documents/meshml_fieldml.html/
 
+# Level of Details in Design?
+
 /root
     Attributes:
         creator:
@@ -37,8 +39,10 @@ http://www.physiome.org.nz/xml_languages/fieldml/documents/meshml_fieldml.html/
     /Group:Region
         # defines the container region for datasets of different
         # types in the subhierarchy, dataset can contain multiple Regions
-        
+
         Attributes:
+            id : int
+                # needs ids to be used as hash id and for RegionConnector specification
             dimension: (int,int,int)
             resolution: (float,float,float)
             resolution_unit: (str,str,str)
@@ -135,6 +139,14 @@ http://www.physiome.org.nz/xml_languages/fieldml/documents/meshml_fieldml.html/
                         name:labels
                         description: 'Semantics of the points'
                         mapping: '{u"1": u"axon", u"2" : u"soma", u"3" : u"dendrite"}'
+                    /Dataset:data
+                        1
+                        1
+                        2
+                        3
+                        3
+                        .
+                        .
 
                 /Group:Concept
                     Attributes:
@@ -149,7 +161,9 @@ http://www.physiome.org.nz/xml_languages/fieldml/documents/meshml_fieldml.html/
                 More concepts: radius, confidence, cell class, scalar / vector / tensor
 
             /Group:Connectivity
-
+                # rather store full connectivity [fromidx, toidx] rather than parent-child
+                # with -1. advantage of using unsigned int. similarly for triangles [firstidx,secidx,thirdidx]
+                
                 /Dataset:data
                     # adds the offset to the ordered trees to make indexing global into the Points
                     Attributes:
@@ -173,6 +187,18 @@ http://www.physiome.org.nz/xml_languages/fieldml/documents/meshml_fieldml.html/
                         [0,-1]
                         [1, 0]
                         ...
+
+            /Group:Trees
+                # here you could store tree-based tags, e.g. associated with the tree id
+
+                /Group:Concept
+                    Attributes:
+                        type : aabb
+                    # store axis aligned bounding boxes for each tree
+                    /Dataset:data
+                        [id, lower, upper]
+                        [123, x0, y0, z0, x1, y1, z1]
+                        ....
 
         /Group:Connectors
             # connectors are M:N relations between treeline nodes
@@ -205,3 +231,6 @@ http://www.physiome.org.nz/xml_languages/fieldml/documents/meshml_fieldml.html/
                 # Question: is post_conn directionality OK? alternatively
                 # have another column defining the type/directionality
                 # What do you possibly want to store?
+
+        /Group:PointCloud
+            # e.g. vertices without connectivity but radius and color attributes
