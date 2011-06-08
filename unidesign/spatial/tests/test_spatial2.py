@@ -6,7 +6,7 @@ from neurohdf import File
 f = File('mydataset.nh5', 'r')
 
 # wrap a region
-myregion = Region.from_neurohdf(f, 'neuropile')
+myregion = Region.from_neurohdf(f, 'neuropile', memmapped = False)
 
 # fetch cells
 # level defines how many indirections: connectors, trees etc. to fetch into memory
@@ -34,50 +34,3 @@ myregion.get_class_graph( include_classes = ['all'] )
 # 2) compute centrality
 # 3) feed centrality into colormap
 # 4) create fos actor with information
-
-# =======
-
-class Tree(object):
-
-    points = None
-    connectivity = None
-
-    # concepts, fetched from NeuroHDF
-    labels = None
-    # ...
-    # dynamically add using setattr and getattr
-
-    # outgoing connectors
-    output = []
-
-    # incoming connectors
-    input = []
-
-    def reroot(self, new_root_id):
-        # reroot a tree
-        # take care, rerooting would might change the ids
-        # and subsequently invalidate the connectors
-        # no, it is just changing the connectivity
-        pass
-    
-    def subtree(self, subtree_root_id, copy = True):
-        # return a new tree with the given root subtree
-        pass
-
-    def attach(self, tree_instance, treenode_nodeid_to_merge_onto):
-        # attach another tree to self at the given treenode id
-        pass
-
-    def split(self, at_treenode):
-        # split Tree at treenode, returning two new trees
-        # might be better defined somewhere else
-        pass
-
-class Connector(object):
-
-    location = None
-
-    # incoming connections
-    input = []
-    # outgoing connections
-    output = []

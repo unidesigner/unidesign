@@ -48,6 +48,7 @@ Motivation
 * http://www.neurogeometry.net/
 * Numpy array tricks (e.g. amin) http://www.slideshare.net/enthought/numpy-talk-at-siam
 * http://netmorph.org/
+* Spatial hash function for collision detection: http://www.beosil.com/download/CollisionDetectionHashing_VMV03.pdf
 
 Design Goals
 ============

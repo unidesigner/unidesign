@@ -1,4 +1,6 @@
 
+# TODO: add Group and/or Selection
+
 class Region(object):
     """ Base class for a spatial Region container
 
@@ -29,6 +31,8 @@ class Region(object):
 
         origo : array-like
             The locus of the origo of the coordinate system
+            XXX: in relation to some global coordinate system (?)
+                 this could be implied in the affine
 
         axes_orientation : array-like
             The orthogonal orientation of the x-, y- and z-axes

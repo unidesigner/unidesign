@@ -40,3 +40,26 @@ Packages
 Questions
 ---------
 * DynamicRegion with t dimension. How to transform event and interval?
+
+Examples
+--------
+Use NetworkX to store coupling parameter for a system of coupled, damped oscillators
+http://www.uncg.edu/phy/hellen/Python_Instructions.html
+To make a network of such oscillators coupled over the network you could replace those lines with the code:
+def damped_osc(u,t,b,G): #defines the system of odes
+    n=len(G)
+    x=u[:n]
+    v=u[n:]
+    dx=v
+    dv=-x-b*v
+    for n in G:   # coupling
+        dx[n] += sum( G[n][nbr].get('weight',1)*(x[nbr]-x[n]) for nbr in G[n] )
+    return r_[dx,dv]  # this is one of many ways to concatenate numpy arrays
+t = arange(0,20,0.1)
+u0 = array([1,1.1,0,0])   # initial x for each node and v for each node
+G=networkx.complete_graph(2)
+b=0.4
+u=odeint(damped_osc,u0,t,args=(b,G)) #b is in tuple, needs comma
+
+So, the network is stored in G, and the odeint vector field function can use it to  hold the coupling coefficients between nodes.
+

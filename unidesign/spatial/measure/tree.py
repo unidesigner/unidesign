@@ -1,11 +1,6 @@
-__author__ = 'sgerhard'
-
 """
-unidesign.spatial.measure
------------------------------
-Finds the distance between points, polygon area, etc.
-
 Defines (morphological) measures for different geometries
+Finds the distance between points, polygon area, etc.
 
 .tree
 .tree.arbor
@@ -30,4 +25,13 @@ Defines (morphological) measures for different geometries
 * density and distribution on the tree
 
 See appendix of http://www.springerlink.com/content/37h5r777825292lv/fulltext.pdf
+
+http://online.itp.ucsb.edu/online/neuro10/stevens/rm/flashtv.html
+http://online.itp.ucsb.edu/online/colloq/stevens1/
+* branch length
+* number of branches
+* branch angles
+
+vs. general:
+* arbor density function (for 2d and 3d)
 """

@@ -1,5 +1,3 @@
-""" Test `unidesign`.`spatial`.`util` module """
-
 import numpy as np
 
 from ..util import convert_local_tree_topology_to_graph
@@ -18,4 +16,3 @@ def test_convert_tree_graph():
     tree_node_labeling = np.array([2515, 2519, 2521, 2517], dtype=np.int32)
 
     graph = convert_local_tree_topology_to_graph(loc_tree_topo, tree_node_labeling)
-
