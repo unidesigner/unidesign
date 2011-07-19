@@ -49,6 +49,10 @@ Motivation
 * Numpy array tricks (e.g. amin) http://www.slideshare.net/enthought/numpy-talk-at-siam
 * http://netmorph.org/
 * Spatial hash function for collision detection: http://www.beosil.com/download/CollisionDetectionHashing_VMV03.pdf
+* Algorithm to detect closeness between arbors (potential synapses) "Identifying, tabulating, and analyzing contacts between branched neuron morphologies"
+  http://bluebrain.epfl.ch/files/content/sites/bluebrain/files/Scientific%20Publications/2008%20-%20%20Identifying,%20tabulating,%20and%20analyzing%20contacts%20between%20branched%20neuron%20morphologies.pdf
+* Meshing of Skeletons: "A Neuron Membrane Mesh Representation for Visualization of Electrophysiological Simulations"
+  http://www.computer.org/portal/web/csdl/doi/10.1109/TVCG.2011.55
 
 Design Goals
 ============
