@@ -1,8 +1,6 @@
 NeuroHDF
 ========
 
-NeuroHDF defines a hierarchical layout to represent multi-scale, multi-modal neuroscientific datasets based on HDF5.
-
 Implement a first draft of a "NeuroHDF" layout according to the principles
 outlined in "Unifying Biological Image Formats with HDF5"
 http://queue.acm.org/detail.cfm?id=1628215
@@ -67,51 +65,6 @@ Hierarchical Layout Recommendation
 
 - **Root**
 
-  *The top-level node of the hierarchy. Project/subject nodes might be injected higher.*
-
-  - Attributes
-
-    *Globally applicable metadata*
-
-    creator
-        The creator of the dataset including email
-
-    collaborators
-        The collaborators related to the creation of the dataset
-
-    references
-        Citation or URL reference for this dataset
-
-    title
-        A generic title
-
-    species
-        The biological organism this dataset is representing
-
-    description
-        A generic prose description of the content and purpose of the dataset
-
-    created
-        Creation timestamp
-
-    modified
-        Modification timestamp
-
-    ...
-        ...
-
-  - **Group:Physiology**
-
-  *High-level node for physiological datasets, possibly associated with anatomy*
-
-  - **Group:Simulation**
-
-  *High-level node for data produced by (neuronal) simulators*
-
-  - **Group:Behavior**
-
-  *Behavioral measurements*
-
   - **Group:Network**
 
   *Other names: Connectionmatrix/Graph/Circuitry/ConnectivityDiagram.
@@ -144,15 +97,10 @@ Hierarchical Layout Recommendation
             e.g. neuroscience.anatomy.microscale
 
       - **Group:Metadata**
-
         *Metadata organised as XML file, byte-encoded as 1D byte array*
-
         - Dataset:NineML
-
         - Dataset:JSON
-
         - ...
-
 
       - **Group:2DSliceSet**
 

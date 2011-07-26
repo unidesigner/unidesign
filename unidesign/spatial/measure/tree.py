@@ -54,5 +54,7 @@ Spatial
 * Surface area of arbor (across all segments)
 * Total volume of arborisation
 
+Active Zones, Clusters
+
 """
 

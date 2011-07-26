@@ -53,6 +53,10 @@ Motivation
   http://bluebrain.epfl.ch/files/content/sites/bluebrain/files/Scientific%20Publications/2008%20-%20%20Identifying,%20tabulating,%20and%20analyzing%20contacts%20between%20branched%20neuron%20morphologies.pdf
 * Meshing of Skeletons: "A Neuron Membrane Mesh Representation for Visualization of Electrophysiological Simulations"
   http://www.computer.org/portal/web/csdl/doi/10.1109/TVCG.2011.55
+* Axonal and dendritic branching strategies. Correlation between synapse location and branch points:
+  http://www.frontiersin.org/neural_circuits/10.3389/neuro.04.018.2009/full
+* Use PCA to find neuron symmetry axes
+  http://glowingpython.blogspot.com/2011/07/principal-component-analysis-with-numpy.html?spref=tw
 
 Design Goals
 ============
