@@ -1,6 +1,5 @@
-NeuroHDF
+euroHDF
 ========
-
 NeuroHDF defines a hierarchical layout to represent multi-scale, multi-modal neuroscientific datasets based on HDF5.
 
 NeuroHDF enables storage and fast access of large datasets. It can be used to store time series data (behavior,
@@ -8,8 +7,6 @@ NeuroHDF enables storage and fast access of large datasets. It can be used to st
  dynamic networks).
 
 Basic idea: Use generalized N-dimensional homogeneous array together with metadata structured in a hierarchical manner.
-
-
 
 Implement a first draft of a "NeuroHDF" layout according to the principles outlined in `Unifying Biological Image Formats with HDF5 <http://queue.acm.org/detail.cfm?id=1628215>`_
 
@@ -143,6 +140,9 @@ Binary blob object:
   - **Group:Physiology**: *High-level node for physiological datasets, possibly associated with anatomy*
   - **Group:Simulation**: *High-level node for data produced by (neuronal) simulators*
   - **Group:Behavior**: *Behavioral measurements*
+=======
+- **Root**
+
   - **Group:Network**
 
   *Other names: Connectionmatrix/Graph/Circuitry/ConnectivityDiagram.
@@ -171,15 +171,10 @@ Binary blob object:
             e.g. neuroscience.anatomy.microscale
 
       - **Group:Metadata**
-
         *Metadata organised as XML file, byte-encoded as 1D byte array*
-
         - Dataset:NineML
-
         - Dataset:JSON
-
         - ...
-
 
       - **Group:2DSliceSet**
 

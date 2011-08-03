@@ -28,9 +28,10 @@ FROM PARALLEL SERIAL SECTIONS INCLUDING THREE DIFFERENT GEOMETRICAL REPRESENTATI
 """
 
 
+
 class Tree(object):
 
-    points = None
+    vertices = None
     connectivity = None
 
     # concepts, fetched from NeuroHDF
@@ -63,6 +64,9 @@ class Tree(object):
         # split Tree at treenode, returning two new trees
         # might be better defined somewhere else
         pass
+
+    # Reduce
+    # reduce tree and keep only branching vertices
 
 class Connector(object):
 
