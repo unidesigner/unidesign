@@ -6,7 +6,15 @@ Focus:
 * http://code.google.com/p/treestoolbox/
 * http://www.treestoolbox.org/index.html
 
+From Molecular Dynamics
+=======================
+http://pymol.org/
+http://www2.molmovdb.org/wiki/info/index.php/Macromolecular_Geometry
+
 ======================
+
+Geometer:http://en.wikipedia.org/wiki/Harold_Scott_MacDonald_Coxeter
+http://en.wikipedia.org/wiki/Harold_Scott_MacDonald_Coxeter
 
 http://paulbourke.net/geometry/
 http://en.wikipedia.org/wiki/Spatial_query
@@ -49,6 +57,7 @@ Motivation
 * Numpy array tricks (e.g. amin) http://www.slideshare.net/enthought/numpy-talk-at-siam
 * http://netmorph.org/
 * Spatial hash function for collision detection: http://www.beosil.com/download/CollisionDetectionHashing_VMV03.pdf
+* Synaptic World http://www.johanneshjorth.se/SynD/SynD.html
 
 Design Goals
 ============

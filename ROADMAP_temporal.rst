@@ -33,6 +33,8 @@ Neural Coding / Reconstructions
 * Characterizing the fine structure of a neural sensory code through information distortion
 http://www.springerlink.com/content/at610w0480663m00/fulltext.pdf
 
+http://www.frontiersin.org/computational_neuroscience/10.3389/fncom.2011.00029/full
+
 Packages
 --------
 * http://code.google.com/p/pandas/
@@ -63,3 +65,6 @@ u=odeint(damped_osc,u0,t,args=(b,G)) #b is in tuple, needs comma
 
 So, the network is stored in G, and the odeint vector field function can use it to  hold the coupling coefficients between nodes.
 
+* Construction of Symbolic Dynamicsfrom Experimental Time Series
+* G. Carlsson, T. Ishkhanov, F. Mémoli, D. Ringach, G. Sapiro, ‘Topological analysis of the responses of neurons in V1,’
+* Search for " Symbolic Dynamics Time Series"
