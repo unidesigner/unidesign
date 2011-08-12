@@ -6,7 +6,15 @@ Focus:
 * http://code.google.com/p/treestoolbox/
 * http://www.treestoolbox.org/index.html
 
+From Molecular Dynamics
+=======================
+http://pymol.org/
+http://www2.molmovdb.org/wiki/info/index.php/Macromolecular_Geometry
+
 ======================
+
+Geometer:http://en.wikipedia.org/wiki/Harold_Scott_MacDonald_Coxeter
+http://en.wikipedia.org/wiki/Harold_Scott_MacDonald_Coxeter
 
 http://paulbourke.net/geometry/
 http://en.wikipedia.org/wiki/Spatial_query
@@ -49,6 +57,8 @@ Motivation
 * Numpy array tricks (e.g. amin) http://www.slideshare.net/enthought/numpy-talk-at-siam
 * http://netmorph.org/
 * Spatial hash function for collision detection: http://www.beosil.com/download/CollisionDetectionHashing_VMV03.pdf
+* Synaptic World http://www.johanneshjorth.se/SynD/SynD.html
+
 * Algorithm to detect closeness between arbors (potential synapses) "Identifying, tabulating, and analyzing contacts between branched neuron morphologies"
   http://bluebrain.epfl.ch/files/content/sites/bluebrain/files/Scientific%20Publications/2008%20-%20%20Identifying,%20tabulating,%20and%20analyzing%20contacts%20between%20branched%20neuron%20morphologies.pdf
 * Meshing of Skeletons: "A Neuron Membrane Mesh Representation for Visualization of Electrophysiological Simulations"
@@ -59,6 +69,7 @@ Motivation
   http://glowingpython.blogspot.com/2011/07/principal-component-analysis-with-numpy.html?spref=tw
 * Draw process diagram: http://www.sbgn.org/Main_Page
 * Synaptic measures http://www.johanneshjorth.se/SynD/SynD.html
+
 
 Design Goals
 ============

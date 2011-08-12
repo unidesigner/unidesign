@@ -1,9 +1,14 @@
-NeuroHDF
+euroHDF
 ========
+NeuroHDF defines a hierarchical layout to represent multi-scale, multi-modal neuroscientific datasets based on HDF5.
 
-Implement a first draft of a "NeuroHDF" layout according to the principles
-outlined in "Unifying Biological Image Formats with HDF5"
-http://queue.acm.org/detail.cfm?id=1628215
+NeuroHDF enables storage and fast access of large datasets. It can be used to store time series data (behavior,
+ measured and simulated physiology, simulation data, point processes) and structural data (anatomy, static and
+ dynamic networks).
+
+Basic idea: Use generalized N-dimensional homogeneous array together with metadata structured in a hierarchical manner.
+
+Implement a first draft of a "NeuroHDF" layout according to the principles outlined in `Unifying Biological Image Formats with HDF5 <http://queue.acm.org/detail.cfm?id=1628215>`_
 
 There is the BioHDF initiative, with very similar goals. Their specification is here:
 * http://www.hdfgroup.org/projects/biohdf/biohdf_documentation.html
@@ -12,11 +17,52 @@ There is the BioHDF initiative, with very similar goals. Their specification is 
 HDF5 forum
 * http://hdf-forum.184993.n3.nabble.com/
 
+Hierarchical Design
+-------------------
+
+Data types
+**********
+
+NAME
+Synonyms:
+Application examples:
+Mappable existing binary file formats:
+Reusable existing XML markup languages:
+
+Required attributes
+Recommended attributes:
+Optional attributes:
+
+Dataset types (axes type, and content type):
+- non-spatiotemporal entity
+- spatial entity
+- temporal entity
+- spatiotemporal entity
+- generalized spatiotemporal entity
+
+xspace, yspace, zspace, time
+xfrequency, yfrequency, zfrequency, tfrequency
+
+Define a mapping between INDEX space and "WORLD" space
+
+offset would shift the AXES.
+
+Dictionary metadata:
+- bb
+
+* If grouping on the same hierarchical level, one axes has to serve as an "alignment" axes, representing e.g. subjects.
+  Usually these are the rows.
+
+Advantages / Disadvantages for separating/not-separating out big blobs
+--------------------------
+* Extended metadata description required for a subset
+* Requirements of fully filled array not enforcable (e.g. missing conditions for a subject)
+* Enforcement of a global data type would be enforced for the whole blob
+* Dimensions with only one element might be used to break up
+
 Design Goals
 ------------
-* Propose the hierarchical layout with groups and datasets,
-  only later define a set of core characteristics for
-  a valid standard
+* Propose the hierarchical layout with groups and datasets, only later define a set of core characteristics for a valid standard
 * Specify group layout convention
 * Specify usage of attributes
 * Unicode support?
@@ -33,12 +79,12 @@ Interfacing with Simulation Environments
 Based on the review "Computer Simulation Environments" by Gleeson et al.
 
 * NEURON
-    * section object for cable modelling? section = (line) segment?
-    * Import/Export in NeuroML format
+  * section object for cable modelling? section = (line) segment?
+  * Import/Export in NeuroML format
 * GENESIS
-    * OO elements that communicate with each other (about 130 objects)
+  * OO elements that communicate with each other (about 130 objects)
 * NEST
-    * See connectivity specification
+  * See connectivity specification
 
 Resources
 ---------
@@ -63,6 +109,38 @@ Need to represent:
 Hierarchical Layout Recommendation
 ----------------------------------
 
+Idea:
+Integrate groups into one single nd-array by defining per axes:
+* name, e.g. x,y,z,t,channel,parameter[x=3]
+* unit, e.g. m, m**2, m**-0.5, m*s**-1, or m2 or m/s, or 1 for generic axes
+* semantic interpretation, right (towards right is positive x axes)
+3D spatial axes define a right hand coordinate system.
+
+seperate affine transformation in 3d rotation, and a seperate vector for the offset.
+
+Binary blob object:
+* Attributes: name, unit, worldspace semantics
+* affine (rotational component), offset
+* FOR a (spatial) REGION
+
+
+- **Root**
+  *The top-level node of the hierarchy. Project/subject nodes might be injected higher.*
+
+  - Global attributes
+    creator: The creator of the dataset including email
+    collaborators: The collaborators related to the creation of the dataset
+    references: Citation or URL reference for this dataset
+    title: A generic title
+    species: The biological organism this dataset is representing
+    description: A generic prose description of the content and purpose of the dataset
+    created: Creation timestamp
+    modified: Modification timestamp
+
+  - **Group:Physiology**: *High-level node for physiological datasets, possibly associated with anatomy*
+  - **Group:Simulation**: *High-level node for data produced by (neuronal) simulators*
+  - **Group:Behavior**: *Behavioral measurements*
+=======
 - **Root**
 
   - **Group:Network**
@@ -79,16 +157,12 @@ Hierarchical Layout Recommendation
 
         id : int
             Need Region id as hash id and for RegionConnector specification
-
         dimension: (int,int,int)
             The spatial extent on three axes x,y,z
-
         resolution: (float,float,float)
             The spatial resolution on three axes x,y,z
-
-        resolution_unit: (str,str,str)
-            The unit abbreviation on the three axess x,y,z
-
+        unit: (str,str,str)
+            The unit abbreviation on the three axes x,y,z
         affine: (4,4) array
             Transforms container region from root-space (one level higher space) to Region-space
             # What would affines for individual Groups mean?
@@ -141,6 +215,24 @@ Hierarchical Layout Recommendation
         - Dataset:Slice0002
 
         - Dataset:Slice0003
+
+      - **<Group>SurfaceMesh**
+      attr:
+      - type: FaceMesh
+      dataset
+      - vertices
+
+        spatiotemporal entity
+        x,y,z,t
+        at least one spatial, only spatial axes is implicitly interpreted as on time point
+
+        generalized spatiotemporal entity
+        x,y,z,t,channel1,channel2,channel3,subject
+        
+
+      - topology
+
+        topotemporal entity
 
 
       - **Group:PolygonMeshSet**
