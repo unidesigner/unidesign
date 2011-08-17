@@ -67,6 +67,8 @@ Motivation
   http://www.frontiersin.org/neural_circuits/10.3389/neuro.04.018.2009/full
 * Use PCA to find neuron symmetry axes
   http://glowingpython.blogspot.com/2011/07/principal-component-analysis-with-numpy.html?spref=tw
+* Anatomy to dendrograms, and use Gromov-­‐Hausdorff distance	Calrlsson, G.and Memoli, F(2010) JMLR
+
 
 
 Design Goals
