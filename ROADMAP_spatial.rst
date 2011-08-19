@@ -72,6 +72,7 @@ Motivation
 * Synaptic measures http://www.johanneshjorth.se/SynD/SynD.html
 * Anatomy to dendrograms, and use Gromov-­‐Hausdorff distance	Calrlsson, G.and Memoli, F(2010) JMLR
 * http://mit.edu/lrv/www/elegans/
+* motifs: 1:00 http://www.archive.org/details/Redwood_Center_2006_11_07_Chklovskii
 
 Design Goals
 ============
