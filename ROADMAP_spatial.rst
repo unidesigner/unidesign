@@ -58,6 +58,7 @@ Motivation
 * http://netmorph.org/
 * Spatial hash function for collision detection: http://www.beosil.com/download/CollisionDetectionHashing_VMV03.pdf
 * Synaptic World http://www.johanneshjorth.se/SynD/SynD.html
+* Fractal measures: http://www.frontiersin.org/neuroanatomy/10.3389/fnana.2011.00045/full#B9
 
 * Algorithm to detect closeness between arbors (potential synapses) "Identifying, tabulating, and analyzing contacts between branched neuron morphologies"
   http://bluebrain.epfl.ch/files/content/sites/bluebrain/files/Scientific%20Publications/2008%20-%20%20Identifying,%20tabulating,%20and%20analyzing%20contacts%20between%20branched%20neuron%20morphologies.pdf
@@ -69,6 +70,7 @@ Motivation
   http://glowingpython.blogspot.com/2011/07/principal-component-analysis-with-numpy.html?spref=tw
 * Draw process diagram: http://www.sbgn.org/Main_Page
 * Synaptic measures http://www.johanneshjorth.se/SynD/SynD.html
+* Anatomy to dendrograms, and use Gromov-­‐Hausdorff distance	Calrlsson, G.and Memoli, F(2010) JMLR
 
 
 Design Goals
