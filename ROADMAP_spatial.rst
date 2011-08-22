@@ -1,6 +1,13 @@
 unidesign.spatial
 =================
 
+geometry of neural activity
+computational neuroanatomy
+microcircuitry
+functional geometry
+the geometry of activation
+see Rodolf Llinas Hellers Lecture
+
 Focus:
 * Fiji/TrakEM https://github.com/acardona/Fiji-TrakEM2-scripts
 * http://code.google.com/p/treestoolbox/
