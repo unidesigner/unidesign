@@ -75,9 +75,11 @@ Motivation
   http://www.frontiersin.org/neural_circuits/10.3389/neuro.04.018.2009/full
 * Use PCA to find neuron symmetry axes
   http://glowingpython.blogspot.com/2011/07/principal-component-analysis-with-numpy.html?spref=tw
+* Draw process diagram: http://www.sbgn.org/Main_Page
+* Synaptic measures http://www.johanneshjorth.se/SynD/SynD.html
 * Anatomy to dendrograms, and use Gromov-­‐Hausdorff distance	Calrlsson, G.and Memoli, F(2010) JMLR
-
-
+* http://mit.edu/lrv/www/elegans/
+* motifs: 1:00 http://www.archive.org/details/Redwood_Center_2006_11_07_Chklovskii
 
 Design Goals
 ============
