@@ -73,6 +73,9 @@ Motivation
 * Anatomy to dendrograms, and use Gromov-­‐Hausdorff distance	Calrlsson, G.and Memoli, F(2010) JMLR
 * http://mit.edu/lrv/www/elegans/
 * motifs: 1:00 http://www.archive.org/details/Redwood_Center_2006_11_07_Chklovskii
+* http://www.scholarpedia.org/article/Neuron
+* http://www.scholarpedia.org/article/Neuroanatomy
+* V Braitenberg and A Schüz. Cortex: Statistics and Geometry of Neuronal Connectivity. Springer, Berlin, Germany, 1998
 
 Design Goals
 ============
@@ -93,8 +96,20 @@ Basic Questions
 * fiber bundle format: time slice at the topmost level. what is the most efficient? how far does it depend on the data and required operations?
 * importance of the ability to select/deselect, group elements for easier interactivity
 * backend storage using neurohdf or ORM and database, e.g. with sqlalchemy
-
+* cell type X responsible to make cell type Y tuned to F. X and Y relationship? spatial overlap, synaptic connectivity, temporal correlations
 References
 ==========
 * H.B.M. Uylings, A. Ruiz-Marcos, J. van Pelt, The metric analysis of three-dimensional dendritic tree patterns: a methodological review, Journal of Neuroscience Methods, Volume 18, Issues 1-2, October 1986, Pages 127-151, ISSN 0165-0270, DOI: 10.1016/0165-0270(86)90116-0.
 
+What spatio-conceptual queries for visualization do you want to do?
+- Show the skeleton and in-out connectivity with id X
+- Show the arbor types (axon, dendrite, soma, pre, post) colored
+- Show the axonal arbors of the complete spatial volume with different colors (depending on X)
+- Show the dendrictic arbors ... "
+- Show loop motifs...
+- Show "excitatory"/"inhibitory" cells...
+- Show connectors as sphere, colored by their type, radius scaled with their volume
+
+Circuits
+* http://www.igi.tugraz.at/
+* http://www.lsm.tugraz.at/download/index.html
