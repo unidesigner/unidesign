@@ -120,3 +120,14 @@ What spatio-conceptual queries for visualization do you want to do?
 Circuits
 * http://www.igi.tugraz.at/
 * http://www.lsm.tugraz.at/download/index.html
+
+A personal view of the early development of computational neuroscience in the USA
+require extensive, quantitative descriptions of neuronal properties:
+(1) the ion channel types, their densities and their distributions throughout each neuron;
+(2) the types and properties of intracellular calcium ion buffers, and their effect on intracellular
+    spatial and temporal profiles of calcium concentration;
+(3) neurotransmitters, their release mechanisms, and modulation of release by activity;
+(4) neurotransmitter receptor types, properties, and sensitivity to modulation by other
+    transmitters, hormones or activity; and
+(5) intracellular chemical reactions and signaling pathways which may, in turn, affect the release of
+    transmitters and the sensitivity of receptors
