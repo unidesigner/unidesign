@@ -107,6 +107,7 @@ Basic Questions
 References
 ==========
 * H.B.M. Uylings, A. Ruiz-Marcos, J. van Pelt, The metric analysis of three-dimensional dendritic tree patterns: a methodological review, Journal of Neuroscience Methods, Volume 18, Issues 1-2, October 1986, Pages 127-151, ISSN 0165-0270, DOI: 10.1016/0165-0270(86)90116-0.
+* The DIADEM Metric: Comparing Multiple Reconstructions of the Same Neuron
 
 What spatio-conceptual queries for visualization do you want to do?
 - Show the skeleton and in-out connectivity with id X
